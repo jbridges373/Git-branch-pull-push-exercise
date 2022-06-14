@@ -1,14 +1,25 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  background: royalblue;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+
 }
 
 .zoo-animals {
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .items-container img {
+  background: peachpuff;
+  align-items: center;
   width: 250px;
   height: 250px;
   object-fit: cover;
@@ -16,9 +27,18 @@
 }
 
 .items-container {
+  background: peachpuff;
+  align-items: center;
   border: 1px solid #000000;
   max-width: 25%;
   display: flex;
   flex-direction: column;
   margin: 20px;
+}
+
+.title{
+  background: peachpuff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }

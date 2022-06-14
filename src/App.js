@@ -41,17 +41,22 @@ const ZooAnimals = () => {
 	}, []);
 
 	return (
-		<div className="zoo-animals">
-			{error && <p>{error}</p>}
-			<h1>Random Zoo Animal</h1>
-			{zooAnimal.map((animal) => (
+		<div>
+		<h1>Random Zoo Animals</h1>
+
+			<div className="zoo-animals">
+				{error && <p>{error}</p>}	
+			
+				{zooAnimal.map((animal) => (
 				// map through API data stored in the state and display it to the user
-				<div className="items-container" key={animal.id}>
-					<h3>Name: {animal.name}</h3>
-					<img src={animal.image_link} alt="animal" />
-				</div>
-			))}
+					<div className="items-container" key={animal.id}>
+						<h3 className="title">Name: {animal.name}</h3>
+						<img src={animal.image_link} alt="animal" />
+					</div>
+				))}
+			</div>
 		</div>
+
 	);
 };
 
